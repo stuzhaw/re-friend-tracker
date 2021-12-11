@@ -28,6 +28,13 @@ export class GuiModel {
                             "required": true
                         },
                         {
+                            "id": "nickName",
+                            "type": "text",
+                            "name": "Nickname",
+                            "width": 1,
+                            "required": true
+                        },
+                        {
                             "id":   "location",
                             "type": "autocomplete",
                             "name": "Location",
@@ -136,6 +143,13 @@ export class GuiModel {
                             "name": "Location",
                             "icon": "fa-cubes",
                             "color": "yellow",
+                            "page": "locationspage",
+                        },
+                        {
+                            "type": "button",
+                            "name": "Groups",
+                            "icon": "fa-cubes",
+                            "color": "green",
                             "page": "locationspage",
                         },
                     ]
