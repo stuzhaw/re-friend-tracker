@@ -32,7 +32,7 @@ export class GuiModel {
                             "type": "text",
                             "name": "Nickname",
                             "width": 2,
-                            "required": false,
+                            "required": true
                         },
                         {
                             "id":   "location",
@@ -148,9 +148,9 @@ export class GuiModel {
                         {
                             "type": "button",
                             "name": "Groups",
-                            "icon": "fa-cubes",
-                            "color": "green",
-                            "page": "locationspage",
+                            "icon": "fa-weixin",
+                            "color": "wisteria",
+                            "page": "groupsapage",
                         },
                     ]
                 },
