@@ -31,8 +31,8 @@ export class GuiModel {
                             "id": "nickName",
                             "type": "text",
                             "name": "Nickname",
-                            "width": 1,
-                            "required": true
+                            "width": 2,
+                            "required": false,
                         },
                         {
                             "id":   "location",
