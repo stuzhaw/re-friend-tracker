@@ -57,6 +57,16 @@ export class GuiModel {
                             "maxLength": 5000,
                         },
                         {
+                            "id": "group",
+                            "type": "autocomplete",
+                            "name": "Group",
+                            "url": "/group",
+                            "form": "GroupForm",
+                            "width": 2
+                        },
+
+
+                        {
                             "type": "deleteButton",
                             "name": "Delete"
                         },
@@ -68,6 +78,9 @@ export class GuiModel {
                             "type": "okButton",
                             "name": "Ok"
                         }
+
+
+
                     ]
                 },
                 {
@@ -81,6 +94,14 @@ export class GuiModel {
                             "name": "LocationName",
                             "width": 2,
                             "required": true
+                        },
+                        {
+                            "id": "comment",
+                            "type": "text",
+                            "name": "Comments",
+                            "width": 2,
+                            "height": 4,
+                            "maxLength": 5000,
                         },
                         {
                             "type": "deleteButton",
