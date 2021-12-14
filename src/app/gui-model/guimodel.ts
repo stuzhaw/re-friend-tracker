@@ -132,6 +132,14 @@ export class GuiModel {
                             "required": true
                         },
                         {
+                            "id": "creation date",
+                            "type": "date",
+                            "name": "Date",
+                            "width": 2
+                        },
+
+
+                        {
                             "id": "comment",
                             "type": "text",
                             "name": "Comments",
@@ -164,6 +172,20 @@ export class GuiModel {
                             "name": "ActivityName",
                             "width": 2,
                             "required": true
+                        },
+                        {
+                            "id": "date",
+                            "type": "date",
+                            "name": "Date",
+                            "width": 2
+                        },
+                        {
+                            "id": "comment",
+                            "type": "text",
+                            "name": "Comments",
+                            "width": 2,
+                            "height": 4,
+                            "maxLength": 5000,
                         },
                         {
                             "type": "deleteButton",
@@ -217,8 +239,8 @@ export class GuiModel {
                             "type": "button",
                             "name": "Activity",
                             "icon": "fas fa-baseball-ball",
-                            "color": "green",
-                            "page": "activitypage",
+                            "color": "red",
+                            "page": "activityspage",
                         },
                     ]
                 },
