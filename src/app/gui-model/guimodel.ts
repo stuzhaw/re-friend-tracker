@@ -66,6 +66,7 @@ export class GuiModel {
                         },
 
 
+
                         {
                             "type": "deleteButton",
                             "name": "Delete"
@@ -131,6 +132,14 @@ export class GuiModel {
                             "required": true
                         },
                         {
+                            "id": "comment",
+                            "type": "text",
+                            "name": "Comments",
+                            "width": 2,
+                            "height": 4,
+                            "maxLength": 5000,
+                        },
+                        {
                             "type": "deleteButton",
                             "name": "Delete"
                         },
@@ -144,23 +153,17 @@ export class GuiModel {
                         }
                     ]
                 },
-
-
-
                 {
-                    "id": "AddActivityForm",
+                    "id": "ActivityForm",
                     "title": "Activity",
-                    "url": "/friend/:friendKey/activity",
+                    "url": "/activity",
                     "formFieldList": [
                         {
-                            "id": "activity",
-                            "type": "autocomplete",
-                            "name": "Activity",
-                            "url": "/activity",
-                            "defaultKey": "activityKey",
-                            "readonly": true,
-                            "form": "ActivityForm",
-                            "width": 2
+                            "id": "name",
+                            "type": "text",
+                            "name": "ActivityName",
+                            "width": 2,
+                            "required": true
                         },
                         {
                             "type": "deleteButton",
@@ -176,6 +179,11 @@ export class GuiModel {
                         }
                     ]
                 },
+
+
+
+
+
             ],
             "pageList": [
 
@@ -210,7 +218,7 @@ export class GuiModel {
                             "name": "Activity",
                             "icon": "fas fa-baseball-ball",
                             "color": "green",
-                            "page": "groupspage",
+                            "page": "activitypage",
                         },
                     ]
                 },
@@ -298,10 +306,55 @@ export class GuiModel {
                             }
                         },
 
+                        {
+                            "id": "activitypage",
+                            "elementList": [
+                                {
+                                    "type": "backbutton",
+                                },
+                                {
+                                    "type": "newButton",
+                                    "name": "NewActivity",
+                                    "icon": "fa-weixin",
+                                    "color": "green",
+                                    "form": {
+                                        "form": "ActivityForm"
+                                    }
+                                },
+                                {
+                                    "type": "list",
+                                    "icon": "fa-weixin",
+                                    "color": "wisteria",
+                                    "search": true,
+                                    "url": "/activity",
+                                    "form": {
+                                        "form": "ActivityForm"
+                                    }
+                                },
+
+
+
+
+
+                            ]
+                        }
+
+
+
+
+
+
+
 
 
                     ]
                 },
+
+
+
+
+
+
 
 
             ]
