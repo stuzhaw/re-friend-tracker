@@ -216,7 +216,7 @@ export class GuiModel {
                     "formFieldList": [
                         
                         {
-                            "id": "name",
+                            "id": "name",//new
                             "type": "autocomplete",
                             "name": "Activity",
                             "url": "/activity",
@@ -282,14 +282,22 @@ export class GuiModel {
                         },
                         {
                             "type": "newButton",
-                            "name": "Add Activity",
+                            "name": "AddActivity",
                             "icon": "fa-user",
                             "color": "green",
                             "form": {
                                 "form": "ActivityForm2"
                             }
                         },
-                       
+                        {
+                            "type": "button",
+                            "name": "EditFriend",
+                            "icon": "fa-user",
+                            "color": "pink",
+                            "form": {
+                                "form": "FriendForm"
+                            }
+                        },
                     ]
                 },
                 {
