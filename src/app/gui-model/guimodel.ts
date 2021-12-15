@@ -214,7 +214,7 @@ export class GuiModel {
                     "title": "Activity",
                     "url": "/activity",
                     "formFieldList": [
-                        
+
                         {
                             "id": "name",//new
                             "type": "autocomplete",
@@ -222,6 +222,7 @@ export class GuiModel {
                             "url": "/activity",
                             "form": "ActivityForm",
                             "width": 2
+                            
                         },
                         {
                             "type": "deleteButton",
@@ -292,22 +293,24 @@ export class GuiModel {
                         {
                             "type": "newButton",
                             "name": "AddActivity",
-                            "icon": "fa-user",
+                            "icon": "fa-baseball-ball",
                             "color": "green",
                             "form": {
                                 "form": "ActivityForm2"
                             }
                         },
-                        
+
                         {
                             "type": "list",
-                            "icon": "fa-running",
+                            "icon": "fa-baseball-ball",
                             "color": "red",
                             "search": true,
                             "url": "/activity",
                             "form": {
-                                "form": "ActivityForm"
+                                "form": "ActivityForm2"
                             }
+                            
+
                         },
                     ]
                 },
@@ -404,7 +407,7 @@ export class GuiModel {
                         {
                             "type": "newButton",
                             "name": "NewActivity",
-                            "icon": "fa-running",
+                            "icon": "fa-baseball-ball",
                             "color": "green",
                             "form": {
                                 "form": "ActivityForm"
@@ -412,7 +415,7 @@ export class GuiModel {
                         },
                         {
                             "type": "list",
-                            "icon": "fa-running",
+                            "icon": "fa-baseball-ball",
                             "color": "red",
                             "search": true,
                             "url": "/activity",
