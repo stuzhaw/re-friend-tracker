@@ -320,8 +320,8 @@ export class GuiModel {
                                 "form": "GroupForm"
                             }
                         },
-                        
-                        
+
+
                     ]
                 },
                 {
@@ -332,9 +332,9 @@ export class GuiModel {
                         },
                         {
                             "type": "newButton",
-                            "name": "NewActivity",
+                            "name": "NewActivitiy",
                             "icon": "fa-running",
-                            "color": "red",
+                            "color": "green",
                             "form": {
                                 "form": "ActivityForm"
                             }
@@ -342,10 +342,12 @@ export class GuiModel {
                         {
                             "type": "list",
                             "icon": "fa-running",
-                            "color": "orange",
+                            "color": "red",
                             "search": true,
                             "url": "/activity",
-                            "page": "detail_activitiespage"
+                            "form": {
+                                "form": "ActivityForm"
+                            }
                         },
 
                     ]
