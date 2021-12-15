@@ -201,14 +201,8 @@ export class GuiModel {
                         }
                     ]
                 },
-
-
-
-
-
             ],
             "pageList": [
-
 
                 {
                     "id": "mainmenu",
@@ -238,9 +232,9 @@ export class GuiModel {
                         {
                             "type": "button",
                             "name": "Activity",
-                            "icon": "fas fa-baseball-ball",
+                            "icon": "fa-baseball-ball",
                             "color": "red",
-                            "page": "activityspage",
+                            "page": "activitiespage",
                         },
                     ]
                 },
@@ -301,7 +295,6 @@ export class GuiModel {
 
                     ]
                 },
-
                 {
                     "id": "groupspage",
                     "elementList": [
@@ -327,63 +320,39 @@ export class GuiModel {
                                 "form": "GroupForm"
                             }
                         },
-
+                        
+                        
+                    ]
+                },
+                {
+                    "id": "activitiespage",
+                    "elementList": [
                         {
-                            "id": "activitypage",
-                            "elementList": [
-                                {
-                                    "type": "backbutton",
-                                },
-                                {
-                                    "type": "newButton",
-                                    "name": "NewActivity",
-                                    "icon": "fa-weixin",
-                                    "color": "green",
-                                    "form": {
-                                        "form": "ActivityForm"
-                                    }
-                                },
-                                {
-                                    "type": "list",
-                                    "icon": "fa-weixin",
-                                    "color": "wisteria",
-                                    "search": true,
-                                    "url": "/activity",
-                                    "form": {
-                                        "form": "ActivityForm"
-                                    }
-                                },
-
-
-
-
-
-                            ]
-                        }
-
-
-
-
-
-
-
-
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "NewActivity",
+                            "icon": "fa-running",
+                            "color": "red",
+                            "form": {
+                                "form": "ActivityForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-running",
+                            "color": "orange",
+                            "search": true,
+                            "url": "/activity",
+                            "page": "detail_activitiespage"
+                        },
 
                     ]
                 },
-
-
-
-
-
-
-
-
             ]
         }
     };
-
-
     get guiModel() {
         return this._guiModel;
     }
