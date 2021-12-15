@@ -169,7 +169,7 @@ export class GuiModel {
                         {
                             "id": "name",
                             "type": "text",
-                            "name": "ActivityName",
+                            "name": "Activity",
                             "width": 2,
                             "required": true
                         },
@@ -281,6 +281,15 @@ export class GuiModel {
                             "type": "backbutton",
                         },
                         {
+                            "type": "button",
+                            "name": "EditFriend",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "form": {
+                                "form": "FriendForm"
+                            }
+                        },
+                        {
                             "type": "newButton",
                             "name": "AddActivity",
                             "icon": "fa-user",
@@ -289,13 +298,15 @@ export class GuiModel {
                                 "form": "ActivityForm2"
                             }
                         },
+                        
                         {
-                            "type": "button",
-                            "name": "EditFriend",
-                            "icon": "fa-user",
-                            "color": "pink",
+                            "type": "list",
+                            "icon": "fa-running",
+                            "color": "red",
+                            "search": true,
+                            "url": "/activity",
                             "form": {
-                                "form": "FriendForm"
+                                "form": "ActivityForm"
                             }
                         },
                     ]
