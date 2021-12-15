@@ -392,7 +392,7 @@ export class GuiModel {
                         },
                         {
                             "type": "newButton",
-                            "name": "NewActivitiy",
+                            "name": "NewActivity",
                             "icon": "fa-running",
                             "color": "green",
                             "form": {
