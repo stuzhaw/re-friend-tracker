@@ -209,6 +209,34 @@ export class GuiModel {
                         }
                     ]
                 },
+                {
+                    "id": "ActivityForm2", //new
+                    "title": "Activity",
+                    "url": "/activity",
+                    "formFieldList": [
+                        
+                        {
+                            "id": "name",
+                            "type": "autocomplete",
+                            "name": "Activity",
+                            "url": "/activity",
+                            "form": "ActivityForm",
+                            "width": 2
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
             ],
             "pageList": [
 
@@ -246,6 +274,24 @@ export class GuiModel {
                         },
                     ]
                 },
+                {//new m:n Beziehung
+                    "id": "detailpage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "Add Activity",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "form": {
+                                "form": "ActivityForm2"
+                            }
+                        },
+                       
+                    ]
+                },
                 {
                     "id": "friendspage",
                     "elementList": [
@@ -267,9 +313,7 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/friend",
-                            "form": {
-                                "form": "FriendForm"
-                            }
+                            "page": "detailpage"//geändert
                         },
                     ]
                 },
